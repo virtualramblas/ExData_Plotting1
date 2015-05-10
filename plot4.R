@@ -20,7 +20,7 @@ points(timeseries3, col='blue', type='l')
 legend(1950, 40, c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red","blue"), lty=c(1, 1, 1))
 
 timeseriesGlobalReactivePower <- ts(coursedataToUse$Global_reactive_power)
-plot.ts(timeseriesGlobalReactivePower, yax.flip = TRUE, xlab = "datetime", ylab = "timeseriesGlobalReactivePower")
+plot.ts(timeseriesGlobalReactivePower, yax.flip = TRUE, xlab = "datetime", ylab = "Global_reactive_power")
 
 dev.copy(png,'plot4.png')
 dev.off()
